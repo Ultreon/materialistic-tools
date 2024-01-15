@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "rails",
+  "key": {
+    "#": {
+      "tag": "forge:ingots/netherite"
+    },
+    "B": {
+      "tag": "forge:rods/blaze"
+    },
+    "X": {
+      "item": "materialistic_tools:fire_gem"
+    }
+  },
+  "pattern": [
+    "X X",
+    "X#X",
+    "XBX"
+  ],
+  "result": {
+    "item": "materialistic_tools:empowered_rail"
+  },
+  "show_notification": true
+}

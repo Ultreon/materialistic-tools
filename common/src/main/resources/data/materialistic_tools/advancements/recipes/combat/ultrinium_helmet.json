@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "materialistic_tools:ultrinium_helmet"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_ultrinium": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/ultrinium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_ultrinium",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "materialistic_tools:ultrinium_helmet"
+    ]
+  },
+  "sends_telemetry_event": false
+}

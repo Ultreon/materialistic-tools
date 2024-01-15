@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "forge:ingots/copper"
+    },
+    "X": {
+      "tag": "forge:ingots/copper"
+    }
+  },
+  "pattern": [
+    "XOX",
+    " / ",
+    " / "
+  ],
+  "result": {
+    "item": "materialistic_tools:copper_pickaxe"
+  },
+  "show_notification": true
+}

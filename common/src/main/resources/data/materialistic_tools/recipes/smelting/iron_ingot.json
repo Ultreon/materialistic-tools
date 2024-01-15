@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredient": [
+    {
+      "tag": "forge:raw_material/iron"
+    },
+    {
+      "tag": "forge:ores/iron"
+    }
+  ],
+  "result": "minecraft:iron_ingot"
+}

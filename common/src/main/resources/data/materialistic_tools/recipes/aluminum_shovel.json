@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "forge:ingots/aluminum"
+    },
+    "X": {
+      "tag": "forge:ingots/aluminum"
+    }
+  },
+  "pattern": [
+    "X",
+    "/",
+    "O"
+  ],
+  "result": {
+    "item": "materialistic_tools:aluminum_shovel"
+  },
+  "show_notification": true
+}

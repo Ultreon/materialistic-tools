@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "materialistic_tools:metals/uranium_ingot_from_nuggets"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_uranium_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:nuggets/uranium"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_uranium_nugget",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "materialistic_tools:metals/uranium_ingot_from_nuggets"
+    ]
+  },
+  "sends_telemetry_event": false
+}

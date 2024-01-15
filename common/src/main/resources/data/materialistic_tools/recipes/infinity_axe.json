@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "forge:ingots/infinity"
+    },
+    "X": {
+      "tag": "forge:ingots/infinity"
+    }
+  },
+  "pattern": [
+    "XO",
+    "X/",
+    " /"
+  ],
+  "result": {
+    "item": "materialistic_tools:infinity_axe"
+  },
+  "show_notification": true
+}

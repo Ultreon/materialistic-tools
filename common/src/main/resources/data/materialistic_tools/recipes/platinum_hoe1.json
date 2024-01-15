@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "forge:ingots/platinum"
+    },
+    "X": {
+      "tag": "forge:ingots/platinum"
+    }
+  },
+  "pattern": [
+    "OX",
+    "/ ",
+    "/ "
+  ],
+  "result": {
+    "item": "materialistic_tools:platinum_hoe"
+  },
+  "show_notification": true
+}

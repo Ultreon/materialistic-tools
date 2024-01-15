@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "materialistic_tools",
+  "version": "${version}",
+
+  "name": "Materialistic Tools",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "All Rights Reserved",
+  "icon": "icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.ultreon.mods.materialistic_tools.fabric.MaterialisticToolsFabric"
+    ]
+  },
+  "mixins": [
+    "materialistic_tools.mixins.json",
+    "materialistic_tools-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.1",
+    "minecraft": ">=1.20.1"
+  }
+}

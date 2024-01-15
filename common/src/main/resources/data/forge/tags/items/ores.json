@@ -1,0 +1,20 @@
+{
+  "values": [
+    "#forge:ores/lapis",
+    "#forge:ores/bauxite",
+    "#forge:ores/platinum",
+    "#forge:ores/quartz",
+    "#forge:ores/cobalt",
+    "#forge:ores/gold",
+    "#forge:ores/lead",
+    "#forge:ores/chunk",
+    "#forge:ores/silver",
+    "#forge:ores/diamond",
+    "#forge:ores/infinity",
+    "#forge:ores/iron",
+    "#forge:ores/copper",
+    "#forge:ores/uranium",
+    "#forge:ores/ultrinium",
+    "#forge:ores/emerald"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 1.0,
+  "ingredient": [
+    {
+      "tag": "forge:raw_material/iron"
+    },
+    {
+      "tag": "forge:ores/iron"
+    }
+  ],
+  "result": "minecraft:iron_ingot"
+}

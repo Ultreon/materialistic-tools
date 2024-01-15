@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "forge:ingots/lumium"
+    },
+    "X": {
+      "tag": "forge:ingots/lumium"
+    }
+  },
+  "pattern": [
+    "OX",
+    "/X",
+    "/ "
+  ],
+  "result": {
+    "item": "materialistic_tools:lumium_axe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "item": "materialistic_tools:fire_gem"
+    },
+    "X": {
+      "tag": "forge:obsidian"
+    }
+  },
+  "pattern": [
+    "XOX",
+    " / ",
+    " / "
+  ],
+  "result": {
+    "item": "materialistic_tools:obsidian_pickaxe"
+  },
+  "show_notification": true
+}

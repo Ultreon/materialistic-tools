@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "forge:ingots/ultrinium"
+    },
+    "X": {
+      "tag": "forge:ingots/ultrinium"
+    }
+  },
+  "pattern": [
+    "XO",
+    " /",
+    " /"
+  ],
+  "result": {
+    "item": "materialistic_tools:ultrinium_hoe"
+  },
+  "show_notification": true
+}

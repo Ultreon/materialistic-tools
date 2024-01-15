@@ -1,0 +1,260 @@
+{
+  "values": [
+    {
+      "id": "materialistic_tools:copper_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:copper_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:copper_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:copper_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:silver_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:silver_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:silver_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:silver_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lead_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lead_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lead_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lead_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:platinum_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:platinum_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:platinum_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:platinum_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aluminum_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aluminum_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aluminum_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aluminum_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:uranium_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:uranium_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:uranium_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:uranium_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:electrum_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:electrum_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:electrum_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:electrum_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lumium_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lumium_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lumium_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lumium_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:enderium_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:enderium_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:enderium_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:enderium_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aurora_steel_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aurora_steel_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aurora_steel_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aurora_steel_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:obsidian_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:obsidian_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:obsidian_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:obsidian_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:cobalt_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:cobalt_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:cobalt_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:cobalt_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:ultrinium_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:ultrinium_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:ultrinium_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:ultrinium_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:chunk_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:chunk_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:chunk_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:chunk_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:infinity_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:infinity_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:infinity_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:infinity_boots",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:amethyst_helmet",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:amethyst_chestplate",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:amethyst_leggings",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:amethyst_boots",
+      "required": false
+    }
+  ]
+}

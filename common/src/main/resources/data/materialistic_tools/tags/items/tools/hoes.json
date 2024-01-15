@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "materialistic_tools:copper_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:silver_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lead_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:platinum_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aluminum_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:uranium_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:electrum_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lumium_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:enderium_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aurora_steel_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:obsidian_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:cobalt_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:ultrinium_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:chunk_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:infinity_hoe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:amethyst_hoe",
+      "required": false
+    }
+  ]
+}

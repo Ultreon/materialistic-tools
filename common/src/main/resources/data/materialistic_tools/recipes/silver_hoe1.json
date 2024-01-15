@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "forge:ingots/silver"
+    },
+    "X": {
+      "tag": "forge:ingots/silver"
+    }
+  },
+  "pattern": [
+    "OX",
+    "/ ",
+    "/ "
+  ],
+  "result": {
+    "item": "materialistic_tools:silver_hoe"
+  },
+  "show_notification": true
+}

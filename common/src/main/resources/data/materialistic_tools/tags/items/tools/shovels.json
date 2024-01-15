@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "materialistic_tools:copper_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:silver_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lead_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:platinum_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aluminum_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:uranium_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:electrum_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lumium_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:enderium_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aurora_steel_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:obsidian_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:cobalt_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:ultrinium_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:chunk_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:infinity_shovel",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:amethyst_shovel",
+      "required": false
+    }
+  ]
+}

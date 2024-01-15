@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "materialistictools:block/marble_slab"
+    },
+    "type=double": {
+      "model": "materialistictools:block/marble"
+    },
+    "type=top": {
+      "model": "materialistictools:block/marble_slab_top"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "forge:ingots/uranium"
+    },
+    "X": {
+      "tag": "forge:ingots/uranium"
+    }
+  },
+  "pattern": [
+    "OX",
+    "/ ",
+    "/ "
+  ],
+  "result": {
+    "item": "materialistic_tools:uranium_hoe"
+  },
+  "show_notification": true
+}

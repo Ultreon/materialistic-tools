@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_aurora_steel": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/aurora_steel"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "materialistic_tools:aurora_steel_chestplate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_aurora_steel",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "materialistic_tools:aurora_steel_chestplate"
+    ]
+  },
+  "sends_telemetry_event": false
+}

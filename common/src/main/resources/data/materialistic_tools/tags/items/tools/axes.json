@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "materialistic_tools:copper_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:silver_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lead_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:platinum_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aluminum_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:uranium_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:electrum_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lumium_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:enderium_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aurora_steel_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:obsidian_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:cobalt_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:ultrinium_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:chunk_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:infinity_axe",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:amethyst_axe",
+      "required": false
+    }
+  ]
+}

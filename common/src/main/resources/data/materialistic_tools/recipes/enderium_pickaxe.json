@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "/": {
+      "item": "minecraft:stick"
+    },
+    "O": {
+      "tag": "forge:ingots/enderium"
+    },
+    "X": {
+      "tag": "forge:ingots/enderium"
+    }
+  },
+  "pattern": [
+    "XOX",
+    " / ",
+    " / "
+  ],
+  "result": {
+    "item": "materialistic_tools:enderium_pickaxe"
+  },
+  "show_notification": true
+}

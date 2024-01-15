@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:ingots/ultrinium"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "materialistic_tools:ultrinium_nugget"
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "materialistic_tools:copper_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:silver_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lead_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:platinum_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aluminum_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:uranium_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:electrum_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:lumium_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:enderium_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:aurora_steel_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:obsidian_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:cobalt_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:ultrinium_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:chunk_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:infinity_sword",
+      "required": false
+    },
+    {
+      "id": "materialistic_tools:amethyst_sword",
+      "required": false
+    }
+  ]
+}

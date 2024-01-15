@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "O": {
+      "item": "materialistic_tools:fire_gem"
+    },
+    "X": {
+      "tag": "forge:obsidian"
+    }
+  },
+  "pattern": [
+    "XXX",
+    "O O",
+    "X X"
+  ],
+  "result": {
+    "item": "materialistic_tools:obsidian_leggings"
+  },
+  "show_notification": true
+}
