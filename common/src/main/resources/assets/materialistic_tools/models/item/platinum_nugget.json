@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "materialistictools:item/platinum_nugget"
+    "layer0": "materialistic_tools:item/platinum_nugget"
   }
 }

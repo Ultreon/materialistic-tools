@@ -32,7 +32,7 @@ import static io.github.ultreon.mods.materialistictools.MaterialisticTools.MOD_I
 @SuppressWarnings({"OptionalGetWithoutIsPresent", "Convert2MethodRef"})
 public enum Toolset implements Predicate<Holder<Item>> {
     COPPER(builder("copper")
-            .material(() -> Either.right(Tags.Items.INGOTS_COPPER), () -> Items.STICK)
+            .material(() -> Either.right(ItemMaterial.COPPER.getIngotTag().orElseThrow()), () -> Items.STICK)
             .armor(() -> new ArmorMaterialBuilder()
                     .name(MOD_ID + ":copper")
                     .maxDamageFactor(13)
@@ -259,7 +259,7 @@ public enum Toolset implements Predicate<Holder<Item>> {
                     ModTraits.ENDER.get(), ModTraits.BLAZE.get(),
                     ModTraits.RADIOACTIVE.get()).build(), () -> ModTiers.INFINITY)),
     AMETHYST(builder("amethyst")
-            .material(() -> Either.right(Tags.Items.GEMS_AMETHYST), () -> Items.STICK)
+            .material(() -> Either.right(ItemMaterial.AMETHYST.getGemTag().orElseThrow()), () -> Items.STICK)
             .armor(() -> TraitPack.create().armor(ModTraits.MAGIC_RESISTANT.get()).build(), () -> new ArmorMaterialBuilder()
                     .name(MOD_ID + ":amethyst")
                     .maxDamageFactor(21)
@@ -457,7 +457,7 @@ public enum Toolset implements Predicate<Holder<Item>> {
     @SuppressWarnings({"SameParameterValue"})
     private static final class Builder {
         final String name;
-        private Supplier<Either<Item, Item>> baseMaterial;
+        private Supplier<Either<Item, TagKey<Item>>> baseMaterial;
         private Supplier<Item> handleMaterial;
         private Supplier<Either<Item, TagKey<Item>>> element;
         private Supplier<ArmorMaterial> armorMaterial;
@@ -482,12 +482,12 @@ public enum Toolset implements Predicate<Holder<Item>> {
             this.status = status;
         }
 
-        Builder material(Supplier<Either<Item, Item>> material, Supplier<Item> handleMaterial) {
+        Builder material(Supplier<Either<Item, TagKey<Item>>> material, Supplier<Item> handleMaterial) {
             MaterialisticTools.LOGGER.debug(this.name + "{BUILDER:MATERIAL[0]}: " + material);
             return this.material(material, handleMaterial, null);
         }
 
-        Builder material(Supplier<Either<Item, Item>> material, Supplier<Item> handleMaterial, @Nullable Supplier<Either<Item, TagKey<Item>>> element) {
+        Builder material(Supplier<Either<Item, TagKey<Item>>> material, Supplier<Item> handleMaterial, @Nullable Supplier<Either<Item, TagKey<Item>>> element) {
             MaterialisticTools.LOGGER.debug(this.name + "{BUILDER:MATERIAL[1]}: " + material);
             this.baseMaterial = material;
             this.handleMaterial = handleMaterial;

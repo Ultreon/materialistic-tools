@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "materialistictools:wip"
+    "layer0": "materialistic_tools:item/compressed_iron_ingot"
   }
 }

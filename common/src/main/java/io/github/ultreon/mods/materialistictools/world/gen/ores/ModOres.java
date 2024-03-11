@@ -24,8 +24,8 @@ public final class ModOres {
     // Rare ores
     public static final ItemMaterialOre ULTRINIUM = register(new ItemMaterialOre("ultrinium", () -> ItemMaterial.ULTRINIUM, 560, Integer.MAX_VALUE / 3, ToolRequirement.COBALT, new DefaultOreConfig(1, 1, -64, 64, 128), BiomeTags.IS_NETHER));
 
-    public static final ItemMaterialOre CHUNK = register(new ItemMaterialOre("chunk", () -> ItemMaterial.CHUNK, 1900, Integer.MAX_VALUE / 2, ToolRequirement.ULTRINIUM, new DefaultOreConfig(1, 1, -64, 64, 1024), Tags.Biomes.IS_RARE));
-    public static final ItemMaterialOre INFINITY = register(new ItemMaterialOre("infinity", () -> ItemMaterial.INFINITY, 14280, Integer.MAX_VALUE, ToolRequirement.CHUNK, new DefaultOreConfig(1, 1, -64, 64, 8192), Tags.Biomes.IS_RARE));
+    public static final ItemMaterialOre CHUNK = register(new ItemMaterialOre("chunk", () -> ItemMaterial.CHUNK, 1900, Integer.MAX_VALUE / 2, ToolRequirement.ULTRINIUM, new DefaultOreConfig(1, 1, -64, 64, 1024), biomeContext -> biomeContext.hasTag(BiomeTags.IS_DEEP_OCEAN)));
+    public static final ItemMaterialOre INFINITY = register(new ItemMaterialOre("infinity", () -> ItemMaterial.INFINITY, 14280, Integer.MAX_VALUE, ToolRequirement.CHUNK, new DefaultOreConfig(1, 1, -64, 64, 8192), biomeContext -> biomeContext.hasTag(BiomeTags.IS_DEEP_OCEAN)));
 
     private static <T extends Ore> T register(T ore) {
         LOADERS.add(ore::register);

@@ -1,0 +1,16 @@
+{
+  "values": [
+    "#forge:raw_material/uranium",
+    "#forge:raw_material/ultrinium",
+    "#forge:raw_material/platinum",
+    "#forge:raw_material/chunk",
+    "#forge:raw_material/gold",
+    "#forge:raw_material/lead",
+    "#forge:raw_material/iron",
+    "#forge:raw_material/infinity",
+    "#forge:raw_material/copper",
+    "#forge:raw_material/cobalt",
+    "#forge:raw_material/bauxite",
+    "#forge:raw_material/silver"
+  ]
+}

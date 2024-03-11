@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "materialistictools:item/aluminum_axe"
+    "layer0": "materialistic_tools:item/aluminum_axe"
   }
 }

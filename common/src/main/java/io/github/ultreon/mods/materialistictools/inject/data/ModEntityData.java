@@ -22,6 +22,6 @@ public class ModEntityData {
     }
 
     public void save(CompoundTag tag) {
-        tag.putInt("abilityTicker", tag);
+        tag.putInt("abilityTicker", abilityTicker);
     }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "materialistictools:block/ultrinium_ore"
+      "model": "materialistic_tools:block/ultrinium_ore"
     }
   }
 }

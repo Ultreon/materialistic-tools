@@ -1,9 +1,9 @@
 package io.github.ultreon.mods.materialistictools.item;
 
+import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.ItemLike;
-import net.minecraftforge.registries.RegistrySupplier;
 import org.jetbrains.annotations.NotNull;
 import io.github.ultreon.mods.materialistictools.init.ModItems;
 

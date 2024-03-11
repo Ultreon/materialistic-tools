@@ -2,9 +2,11 @@ package io.github.ultreon.mods.materialistictools.forge;
 
 import dev.architectury.platform.forge.EventBuses;
 import io.github.ultreon.mods.materialistictools.MaterialisticTools;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 @Mod(MaterialisticTools.MOD_ID)
@@ -20,7 +22,12 @@ public class MaterialisticToolsForge {
     }
 
     @SubscribeEvent
-    public void onLoadComplete() {
+    public void onLoadComplete(FMLLoadCompleteEvent evt) {
         MaterialisticTools.postInit();
+    }
+
+    @SubscribeEvent
+    public void dataGen(GatherDataEvent evt) {
+        DataGenerators.gatherData(evt);
     }
 }

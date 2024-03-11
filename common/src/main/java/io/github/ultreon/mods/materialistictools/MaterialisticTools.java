@@ -1,8 +1,8 @@
 package io.github.ultreon.mods.materialistictools;
 
-import dev.architectury.registry.level.biome.BiomeModifications;
 import io.github.ultreon.mods.materialistictools.init.*;
 import io.github.ultreon.mods.materialistictools.item.tool.ModTraits;
+import io.github.ultreon.mods.materialistictools.stats.ModStats;
 import io.github.ultreon.mods.materialistictools.world.gen.ores.ModOres;
 import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
@@ -20,6 +20,7 @@ public class MaterialisticTools
 		ModOres.register();
 		ModTraits.register();
 		ModCreativeTabs.register();
+		ModStats.register();
 	}
 
 	public static void postInit() {

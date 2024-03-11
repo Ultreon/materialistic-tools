@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "materialistictools:item/chunk_boots"
+    "layer0": "materialistic_tools:item/chunk_boots"
   }
 }

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab",
-  "textures": {
-    "bottom": "materialistictools:block/polished_marble",
-    "side": "materialistictools:block/polished_marble",
-    "top": "materialistictools:block/polished_marble"
-  }
-}

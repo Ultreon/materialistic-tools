@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#minecraft:is_overworld",
-  "features": "materialistic_tools:placed_platinum_ore",
-  "step": "underground_ores"
-}

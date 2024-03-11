@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "materialistictools:item/fire_gem"
+    "layer0": "materialistic_tools:item/fire_gem"
   }
 }

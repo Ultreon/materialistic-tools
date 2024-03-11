@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "materialistictools:block/marble",
-    "side": "materialistictools:block/marble",
-    "top": "materialistictools:block/marble"
-  }
-}

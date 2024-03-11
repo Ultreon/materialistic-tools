@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "materialistictools:item/aurora_steel_pickaxe"
+    "layer0": "materialistic_tools:item/aurora_steel_pickaxe"
   }
 }

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "materialistictools:block/electrum_block"
+      "model": "materialistic_tools:block/electrum_block"
     }
   }
 }

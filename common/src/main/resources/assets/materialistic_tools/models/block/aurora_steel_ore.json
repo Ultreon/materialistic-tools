@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "materialistic_tools:block/aurora_steel_ore"
+  }
+}

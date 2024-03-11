@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "materialistictools:block/cobalt_block"
+      "model": "materialistic_tools:block/cobalt_block"
     }
   }
 }

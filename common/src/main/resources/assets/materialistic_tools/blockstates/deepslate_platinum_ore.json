@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "materialistictools:block/deepslate_platinum_ore"
+      "model": "materialistic_tools:block/deepslate_platinum_ore"
     }
   }
 }

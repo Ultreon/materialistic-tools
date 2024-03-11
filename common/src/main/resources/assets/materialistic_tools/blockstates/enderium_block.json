@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "materialistictools:block/enderium_block"
+      "model": "materialistic_tools:block/enderium_block"
     }
   }
 }

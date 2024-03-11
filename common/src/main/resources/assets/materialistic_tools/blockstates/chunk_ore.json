@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "materialistictools:block/chunk_ore"
+      "model": "materialistic_tools:block/chunk_ore"
     }
   }
 }

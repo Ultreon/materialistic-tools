@@ -4,7 +4,7 @@
   "cookingtime": 200,
   "experience": 1.0,
   "ingredient": {
-    "tag": "forge:raw_materials/chunk"
+    "tag": "forge:raw_material/chunk"
   },
   "result": "materialistic_tools:chunk_ingot"
 }

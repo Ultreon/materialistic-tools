@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "materialistictools:block/uranium_ore"
+      "model": "materialistic_tools:block/uranium_ore"
     }
   }
 }

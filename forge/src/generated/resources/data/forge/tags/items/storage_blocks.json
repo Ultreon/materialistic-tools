@@ -1,0 +1,23 @@
+{
+  "values": [
+    "#forge:storage_blocks/uranium",
+    "#forge:storage_blocks/enderium",
+    "#forge:storage_blocks/ultrinium",
+    "#forge:storage_blocks/aurora_steel",
+    "#forge:storage_blocks/platinum",
+    "#forge:storage_blocks/chunk",
+    "#forge:storage_block/diamond",
+    "#forge:storage_block/gold",
+    "#forge:storage_blocks/lumium",
+    "#forge:storage_blocks/lead",
+    "#forge:storage_block/emerald",
+    "#forge:storage_block/netherite",
+    "#forge:storage_block/iron",
+    "#forge:storage_blocks/infinity",
+    "#forge:storage_blocks/electrum",
+    "#forge:storage_block/copper",
+    "#forge:storage_blocks/cobalt",
+    "#forge:storage_blocks/aluminum",
+    "#forge:storage_blocks/silver"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "materialistictools:block/enderium_block"
+    "all": "materialistic_tools:block/enderium_block"
   }
 }

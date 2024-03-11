@@ -14,7 +14,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "io.github.ultreon.mods.materialistic_tools.fabric.MaterialisticToolsFabric"
+      "io.github.ultreon.mods.materialistictools.fabric.MaterialisticToolsFabric"
     ]
   },
   "mixins": [

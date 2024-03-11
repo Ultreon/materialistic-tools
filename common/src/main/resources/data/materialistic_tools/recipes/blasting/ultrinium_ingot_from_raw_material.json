@@ -4,7 +4,7 @@
   "cookingtime": 100,
   "experience": 1.0,
   "ingredient": {
-    "tag": "forge:raw_materials/ultrinium"
+    "tag": "forge:raw_material/ultrinium"
   },
   "result": "materialistic_tools:ultrinium_ingot"
 }

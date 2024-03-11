@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "materialistictools:block/deepslate_chunk_ore"
+    "all": "materialistic_tools:block/deepslate_chunk_ore"
   }
 }

@@ -1,0 +1,19 @@
+{
+  "values": [
+    "#forge:nuggets/uranium",
+    "#forge:nuggets/enderium",
+    "#forge:nuggets/ultrinium",
+    "#forge:nuggets/aurora_steel",
+    "#forge:nuggets/platinum",
+    "#forge:nuggets/chunk",
+    "#forge:nuggets/gold",
+    "#forge:nuggets/lumium",
+    "#forge:nuggets/lead",
+    "#forge:nuggets/iron",
+    "#forge:nuggets/infinity",
+    "#forge:nuggets/electrum",
+    "#forge:nuggets/cobalt",
+    "#forge:nuggets/aluminum",
+    "#forge:nuggets/silver"
+  ]
+}

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/cube_bottom_top",
-  "textures": {
-    "bottom": "materialistictools:block/atomic_tnt_bottom",
-    "side": "materialistictools:block/atomic_tnt_side",
-    "top": "materialistictools:block/atomic_tnt_top"
-  }
-}

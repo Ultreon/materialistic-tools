@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "materialistictools:block/ultrinium_ore"
+    "all": "materialistic_tools:block/ultrinium_ore"
   }
 }

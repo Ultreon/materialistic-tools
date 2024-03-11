@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "materialistictools:block/infinity_block"
+      "model": "materialistic_tools:block/infinity_block"
     }
   }
 }

@@ -14,8 +14,8 @@ import net.minecraft.world.level.block.Block;
 import java.util.List;
 
 public enum ToolRequirement {
-    WOOD(Tags.Blocks.NEEDS_WOOD_TOOL, Tiers.WOOD),
-    GOLD(Tags.Blocks.NEEDS_GOLD_TOOL, Tiers.GOLD),
+    WOOD(ModBlockTags.NEEDS_WOOD_TOOL, Tiers.WOOD),
+    GOLD(ModBlockTags.NEEDS_GOLD_TOOL, Tiers.GOLD),
     STONE(BlockTags.NEEDS_STONE_TOOL, Tiers.STONE),
     IRON(BlockTags.NEEDS_IRON_TOOL, Tiers.IRON),
     DIAMOND(BlockTags.NEEDS_DIAMOND_TOOL, Tiers.DIAMOND),

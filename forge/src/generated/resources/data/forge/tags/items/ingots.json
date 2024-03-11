@@ -1,0 +1,22 @@
+{
+  "values": [
+    "#forge:ingots/uranium",
+    "#forge:ingots/enderium",
+    "#forge:ingots/ultrinium",
+    "#forge:ingots/aurora_steel",
+    "#forge:ingots/platinum",
+    "#forge:ingots/chunk",
+    "#forge:ingots/gold",
+    "#forge:ingots/lumium",
+    "#forge:ingots/lead",
+    "#forge:ingots/netherite",
+    "#forge:ingots/iron",
+    "#forge:ingots/infinity",
+    "#forge:ingots/electrum",
+    "#forge:ingots/copper",
+    "#forge:ingots/cobalt",
+    "#forge:ingots/compressed_iron",
+    "#forge:ingots/aluminum",
+    "#forge:ingots/silver"
+  ]
+}

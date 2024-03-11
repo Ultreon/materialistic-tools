@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "materialistictools:item/uranium_hoe"
+    "layer0": "materialistic_tools:item/uranium_hoe"
   }
 }

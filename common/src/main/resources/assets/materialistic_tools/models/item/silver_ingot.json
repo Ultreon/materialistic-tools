@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "materialistictools:item/silver_ingot"
+    "layer0": "materialistic_tools:item/silver_ingot"
   }
 }

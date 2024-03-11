@@ -2,6 +2,7 @@ package io.github.ultreon.mods.materialistictools.item.tool.trait;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import io.github.ultreon.mods.materialistictools.stats.ModStats;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -19,9 +20,7 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.minecraftforge.common.ForgeMod;
 import org.jetbrains.annotations.NotNull;
-import io.github.ultreon.mods.materialistictools.init.ModStats;
 import io.github.ultreon.mods.materialistictools.item.ItemType;
 import io.github.ultreon.mods.materialistictools.item.material.ItemMaterial;
 import io.github.ultreon.mods.materialistictools.item.tool.Toolset;
@@ -64,7 +63,6 @@ public class InfinityTrait extends AbstractTrait {
         }
 
         // Combat tracking.
-        victim.lastHurtByPlayerTime = 60;
         victim.getCombatTracker().recordDamage(damageSource, victim.getHealth());
         victim.setHealth(0);
 
@@ -97,7 +95,7 @@ public class InfinityTrait extends AbstractTrait {
                 victim.getCombatTracker().recordDamage(player.damageSources().genericKill(), victim.getHealth());
                 victim.setHealth(0);
                 victim.die(player.damageSources().genericKill());
-                player.awardStat(ModStats.INFINITY_KILL.get(), 1);
+//                player.awardStat(ModStats.INFINITY_KILL.get(), 1); // TODO: Implement
             }
         } else if (!entity.level().isClientSide) {
             if (entity.tickCount > 100) {
@@ -180,14 +178,12 @@ public class InfinityTrait extends AbstractTrait {
     @Override
     public Multimap<Attribute, AttributeModifier> getArmorAttributeModifiers(EquipmentSlot slot) {
         return ImmutableMultimap.<Attribute, AttributeModifier>builder()
-                .put(ForgeMod.SWIM_SPEED.get(), new AttributeModifier(SWIM_SPEED_UUID, "SMPTrait.Infinity.SwimSpeed", 3, AttributeModifier.Operation.MULTIPLY_TOTAL))
                 .build();
     }
 
     @Override
     public Multimap<Attribute, AttributeModifier> getToolAttributeModifiers(EquipmentSlot slot) {
         return ImmutableMultimap.<Attribute, AttributeModifier>builder()
-                .put(ForgeMod.ENTITY_REACH.get(), new AttributeModifier(ATTACK_REACH_UUID, "SMPTrait.Infinity.AttackReach", 20, AttributeModifier.Operation.ADDITION))
                 .build();
     }
 }

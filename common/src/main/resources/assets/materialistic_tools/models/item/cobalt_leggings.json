@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "materialistictools:item/cobalt_leggings"
+    "layer0": "materialistic_tools:item/cobalt_leggings"
   }
 }

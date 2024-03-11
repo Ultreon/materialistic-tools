@@ -45,9 +45,9 @@ public class ItemMaterial implements BaseItemMaterial, Predicate<Holder<Item>> {
     public static final ItemMaterial NETHERITE = new ItemMaterial(builder("netherite").vanillaMetal(false, false));
     public static final ItemMaterial DIAMOND = new ItemMaterial(builder("diamond").vanillaGem(true, true));
     public static final ItemMaterial EMERALD = new ItemMaterial(builder("emerald").vanillaGem(true, true));
-    public static final ItemMaterial LAPIS = new ItemMaterial(builder("lapis").vanillaGem(true, true));
-    public static final ItemMaterial QUARTZ = new ItemMaterial(builder("quartz").vanillaGem(true, true));
-    public static final ItemMaterial AMETHYST = new ItemMaterial(builder("amethyst").vanillaGem(true, false));
+    public static final ItemMaterial LAPIS = new ItemMaterial(builder("lapis").vanillaGem(false, false));
+    public static final ItemMaterial QUARTZ = new ItemMaterial(builder("quartz").vanillaGem(false, false));
+    public static final ItemMaterial AMETHYST = new ItemMaterial(builder("amethyst").vanillaGem(false, false));
     public static final ItemMaterial PRISMARINE = new ItemMaterial(builder("prismarine").vanillaGem(false, false));
 
     // Metals
@@ -86,7 +86,7 @@ public class ItemMaterial implements BaseItemMaterial, Predicate<Holder<Item>> {
     private final TagKey<Item> rawMaterialTag;
     private final TagKey<Item> ingotTag;
     private final TagKey<Item> nuggetTag;
-    private final ToolRequirement harvestRequirement;
+    @Nullable private final ToolRequirement harvestRequirement;
     private final TagKey<Item> gemTag;
     private RegistrySupplier<Block> stoneOre;
     private RegistrySupplier<Block> deepslateOre;
@@ -139,25 +139,25 @@ public class ItemMaterial implements BaseItemMaterial, Predicate<Holder<Item>> {
                 String name = metal.oreRegistryName.getPath() + "_ore";
                 metal.stoneOre = ModBlocks.REGISTER.register(name, metal.stoneOreSupplier);
                 ModItems.REGISTER.register(name, () ->
-                        new BlockItem(metal.stoneOre.value(), new Item.Properties()));
+                        new BlockItem(metal.stoneOre.get(), new Item.Properties()));
             }
             if (metal.deepslateOreSupplier != null) {
                 String name = "deepslate_" + metal.oreRegistryName.getPath() + "_ore";
                 metal.deepslateOre = ModBlocks.REGISTER.register(name, metal.deepslateOreSupplier);
                 ModItems.REGISTER.register(name, () ->
-                        new BlockItem(metal.deepslateOre.value(), new Item.Properties()));
+                        new BlockItem(metal.deepslateOre.get(), new Item.Properties()));
             }
             if (metal.netherOreSupplier != null) {
                 String name = "nether_" + metal.oreRegistryName.getPath() + "_ore";
                 metal.netherOre = ModBlocks.REGISTER.register(name, metal.netherOreSupplier);
                 ModItems.REGISTER.register(name, () ->
-                        new BlockItem(metal.netherOre.value(), new Item.Properties()));
+                        new BlockItem(metal.netherOre.get(), new Item.Properties()));
             }
             if (metal.storageBlockSupplier != null) {
                 String name = metal.registryName.getPath() + "_block";
                 metal.storageBlock = ModBlocks.REGISTER.register(name, metal.storageBlockSupplier);
                 ModItems.REGISTER.register(name, () ->
-                        new BlockItem(metal.storageBlock.value(), new Item.Properties()));
+                        new BlockItem(metal.storageBlock.get(), new Item.Properties()));
             }
         }
     }
@@ -255,7 +255,7 @@ public class ItemMaterial implements BaseItemMaterial, Predicate<Holder<Item>> {
      */
     @Nullable
     public Toolset getToolset() {
-        return this.tools.value();
+        return this.tools.get();
     }
 
     /**
@@ -345,7 +345,7 @@ public class ItemMaterial implements BaseItemMaterial, Predicate<Holder<Item>> {
      * @return optional value for the nugget item.
      */
     @Override
-    public RegistrySupplier<Item> getNugget() {
+    public @Nullable RegistrySupplier<Item> getNugget() {
         return this.nugget;
     }
 
@@ -429,7 +429,7 @@ public class ItemMaterial implements BaseItemMaterial, Predicate<Holder<Item>> {
         return Optional.ofNullable(this.nuggetTag);
     }
 
-    public ToolRequirement getHarvestRequirement() {
+    public @Nullable ToolRequirement getHarvestRequirement() {
         return this.harvestRequirement;
     }
 
@@ -599,7 +599,7 @@ public class ItemMaterial implements BaseItemMaterial, Predicate<Holder<Item>> {
 
         public Builder rawMaterial(Ore ore) {
             this.rawMaterial = () -> new Item(new Item.Properties());
-            this.rawMaterialTag = itemTag("raw_materials/" + ore.getName());
+            this.rawMaterialTag = itemTag("raw_material/" + ore.getName());
             return this;
         }
 

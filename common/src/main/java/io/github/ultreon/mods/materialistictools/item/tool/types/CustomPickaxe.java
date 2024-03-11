@@ -24,8 +24,8 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
+import net.fabricmc.api.Environment;
+import net.fabricmc.api.EnvType;
 import org.jetbrains.annotations.Nullable;
 import io.github.ultreon.mods.materialistictools.MaterialisticTools;
 import io.github.ultreon.mods.materialistictools.item.ItemType;
@@ -85,14 +85,6 @@ public class CustomPickaxe extends PickaxeItem implements TraitsItem {
     }
 
     @Override
-    public boolean isBookEnchantable(ItemStack stack, ItemStack book) {
-        if (this.isEnchantable(stack)) {
-            return super.isBookEnchantable(stack, book);
-        }
-        return false;
-    }
-
-    @Override
     public boolean isEnchantable(ItemStack stack) {
         boolean val = super.isEnchantable(stack);
         for (AbstractTrait trait : this.getTraits()) {
@@ -120,25 +112,6 @@ public class CustomPickaxe extends PickaxeItem implements TraitsItem {
     }
 
     @Override
-    public void setDamage(ItemStack stack, int damage) {
-        if (this.canBeDepleted()) {
-            super.setDamage(stack, damage);
-            return;
-        }
-        if (this.isDamaged(stack)) {
-            super.setDamage(stack, 0);
-        }
-    }
-
-    @Override
-    public <T extends LivingEntity> int damageItem(ItemStack stack, int amount, T entity, Consumer<T> onBroken) {
-        if (this.canBeDepleted()) {
-            return super.damageItem(stack, amount, entity, onBroken);
-        }
-        return 0;
-    }
-
-    @Override
     public InteractionResultHolder<ItemStack> use(Level dimensionIn, Player playerIn, InteractionHand handIn) {
         boolean val = false;
         for (AbstractTrait trait : this.getTraits()) {
@@ -148,30 +121,6 @@ public class CustomPickaxe extends PickaxeItem implements TraitsItem {
             return InteractionResultHolder.success(playerIn.getItemInHand(handIn));
         }
         return InteractionResultHolder.fail(playerIn.getItemInHand(handIn));
-    }
-
-    @Override
-    public boolean onLeftClickEntity(ItemStack stack, Player player, Entity clicked) {
-        float smite = 0f;
-        for (AbstractTrait trait : this.getTraits()) {
-            float smiteValue = trait.getSmiteValue(this.getItemTypes(), stack, player);
-            if (smiteValue < 0f) {
-                MaterialisticTools.LOGGER.warn("Smite value is less that zero, this can cause weird behavior");
-            }
-
-            smite += smiteValue;
-            trait.onLeftClickEntity(stack, player, clicked);
-        }
-
-        if (smite > 0f) {
-            if (clicked instanceof LivingEntity living) {
-                if (living.getMobType() == MobType.UNDEAD) {
-                    clicked.hurt(living.damageSources().playerAttack(player), smite);
-                }
-            }
-        }
-
-        return false;
     }
 
     @Override
@@ -207,10 +156,6 @@ public class CustomPickaxe extends PickaxeItem implements TraitsItem {
 
     @Override
     public void inventoryTick(ItemStack stack, Level dimension, Entity entity, int slot, boolean selected) {
-        if (!this.canBeDepleted()) {
-            this.setDamage(stack, 0);
-        }
-
         for (AbstractTrait trait : this.getTraits()) {
             trait.onInventoryTick(stack, dimension, entity, slot, selected);
         }
@@ -225,30 +170,12 @@ public class CustomPickaxe extends PickaxeItem implements TraitsItem {
         return op;
     }
 
-    @Override
-    public boolean onDroppedByPlayer(ItemStack stack, Player player) {
-        boolean op = super.onDroppedByPlayer(stack, player);
-        for (AbstractTrait trait : this.getTraits()) {
-            op &= trait.onDroppedByPlayer(stack, player);
-        }
-        return op;
-    }
-
-    @OnlyIn(Dist.CLIENT)
+    @Environment(EnvType.CLIENT)
     @Override
     public void appendHoverText(ItemStack stack, @Nullable Level dimension, List<Component> tooltip, TooltipFlag flag) {
         for (AbstractTrait trait : this.getTraits()) {
             tooltip.add(trait.getTranslation());
         }
-    }
-
-    @Override
-    public boolean onBlockStartBreak(ItemStack stack, BlockPos pos, Player player) {
-        boolean val = super.onBlockStartBreak(stack, pos, player);
-        for (AbstractTrait trait : this.getTraits()) {
-            val |= trait.onBlockStartBreak(stack, pos, player);
-        }
-        return val;
     }
 
     @Override

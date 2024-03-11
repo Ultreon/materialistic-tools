@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/cube_all",
   "textures": {
-    "all": "materialistictools:wip"
+    "all": "materialistic_tools:block/aurora_steel_block"
   }
 }

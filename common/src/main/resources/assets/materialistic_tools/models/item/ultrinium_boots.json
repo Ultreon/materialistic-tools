@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "materialistictools:item/ultrinium_boots"
+    "layer0": "materialistic_tools:item/ultrinium_boots"
   }
 }

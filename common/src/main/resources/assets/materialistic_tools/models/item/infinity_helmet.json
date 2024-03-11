@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "materialistictools:item/infinity_helmet"
+    "layer0": "materialistic_tools:item/infinity_helmet"
   }
 }

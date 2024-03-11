@@ -4,7 +4,7 @@
   "cookingtime": 100,
   "experience": 1.0,
   "ingredient": {
-    "tag": "forge:raw_materials/silver"
+    "tag": "forge:raw_material/silver"
   },
   "result": "materialistic_tools:silver_ingot"
 }

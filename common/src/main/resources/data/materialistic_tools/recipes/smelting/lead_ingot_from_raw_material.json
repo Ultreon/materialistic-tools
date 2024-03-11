@@ -4,7 +4,7 @@
   "cookingtime": 200,
   "experience": 1.0,
   "ingredient": {
-    "tag": "forge:raw_materials/lead"
+    "tag": "forge:raw_material/lead"
   },
   "result": "materialistic_tools:lead_ingot"
 }

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "materialistictools:item/lead_chestplate"
+    "layer0": "materialistic_tools:item/lead_chestplate"
   }
 }

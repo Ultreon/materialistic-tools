@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "materialistictools:item/aluminum_shovel"
+    "layer0": "materialistic_tools:item/aluminum_shovel"
   }
 }

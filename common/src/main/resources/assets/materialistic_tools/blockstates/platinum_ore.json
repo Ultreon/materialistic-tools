@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "materialistictools:block/platinum_ore"
+      "model": "materialistic_tools:block/platinum_ore"
     }
   }
 }

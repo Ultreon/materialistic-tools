@@ -1,8 +1,8 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "materialistictools:block/infinity_block_vertical",
-    "side": "materialistictools:block/infinity_block",
-    "top": "materialistictools:block/infinity_block_vertical"
+    "bottom": "materialistic_tools:block/infinity_block_vertical",
+    "side": "materialistic_tools:block/infinity_block",
+    "top": "materialistic_tools:block/infinity_block_vertical"
   }
 }

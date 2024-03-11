@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "materialistictools:item/electrum_helmet"
+    "layer0": "materialistic_tools:item/electrum_helmet"
   }
 }
