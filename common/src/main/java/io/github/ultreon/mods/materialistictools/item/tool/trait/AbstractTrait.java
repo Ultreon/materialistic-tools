@@ -370,4 +370,8 @@ public abstract class AbstractTrait {
     public ModEntityData getTraitData(Entity entity) {
         return ((EntityTraitDataInjection)entity).getTraitData();
     }
+
+    public boolean shouldApplyGlint(Player player, ItemStack mainHandItem) {
+        return false;
+    }
 }

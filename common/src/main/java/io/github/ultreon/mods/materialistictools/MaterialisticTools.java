@@ -1,7 +1,9 @@
 package io.github.ultreon.mods.materialistictools;
 
+import dev.architectury.event.events.common.TickEvent;
 import io.github.ultreon.mods.materialistictools.init.*;
 import io.github.ultreon.mods.materialistictools.item.tool.ModTraits;
+import io.github.ultreon.mods.materialistictools.item.tool.TraitTicker;
 import io.github.ultreon.mods.materialistictools.stats.ModStats;
 import io.github.ultreon.mods.materialistictools.world.gen.ores.ModOres;
 import net.minecraft.resources.ResourceLocation;
@@ -21,6 +23,8 @@ public class MaterialisticTools
 		ModTraits.register();
 		ModCreativeTabs.register();
 		ModStats.register();
+
+		TickEvent.PLAYER_POST.register(TraitTicker::tick);
 	}
 
 	public static void postInit() {
